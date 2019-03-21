@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="51px" height="41px" viewBox="0 0 51 41" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+    <title>Volume</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="volume" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="volume" transform="translate(-576.000000, -853.000000)" stroke="currentColor" stroke-width="2">
+            <g id="volume" transform="translate(577.000000, 854.000000)">
+                <path d="M42.0181,1.2875 C46.1381,5.6035 48.7531,12.0525 48.7531,19.2565 C48.7531,26.4615 46.1371,32.9105 42.0161,37.2265" id="Stroke-12"></path>
+                <path d="M36.6958,6.2221 C39.8108,9.2641 41.8138,13.9761 41.8138,19.2561 C41.8138,24.5361 39.8108,29.2491 36.6958,32.2901" id="Stroke-13"></path>
+                <path d="M31.3521,11.185 C33.4721,12.914 34.8751,15.886 34.8751,19.256 C34.8751,22.584 33.5081,25.524 31.4321,27.261" id="Stroke-14"></path>
+                <polygon id="Stroke-15" points="8.1274 10.1908 0.7534 10.1908 0.7534 28.3238 8.1274 28.3238 21.6764 38.4578 21.6764 0.0568"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

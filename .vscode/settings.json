@@ -1,0 +1,9 @@
+{
+    "editor.formatOnSave": true,
+    "beautify.ignore": [
+        "**/*.js",
+        "**/*.jsx"
+    ],
+    "prettier.printWidth": 80,
+    "prettier.singleQuote": true
+}

@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`@components/_base-icon renders its content 1`] = `<span class="small baseIcon"><svg><use xlink:href="#some-icon"></use></svg></span>`;
+
+exports[`@components/_base-icon renders its content when size is invalid 1`] = `<span class="small baseIcon"><svg><use xlink:href="#some-icon"></use></svg></span>`;
+
+exports[`@components/_base-icon renders its content when size is large 1`] = `<span class="large baseIcon"><svg><use xlink:href="#some-icon"></use></svg></span>`;
+
+exports[`@components/_base-icon renders its content when size is medium 1`] = `<span class="medium baseIcon"><svg><use xlink:href="#some-icon"></use></svg></span>`;
+
+exports[`@components/_base-icon renders its content when size is xsmall 1`] = `<span class="xsmall baseIcon"><svg><use xlink:href="#some-icon"></use></svg></span>`;
