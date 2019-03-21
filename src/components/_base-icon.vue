@@ -6,9 +6,9 @@ export default {
       type: [String, Array],
       required: true,
     },
-    size: {
+    width: {
       type: String,
-      default: 'small',
+      default: '64',
     },
     color: {
       type: String,
@@ -24,12 +24,28 @@ export default {
     },
   },
   computed: {
-    overlayClasses() {
-      const sizes = ['large', 'medium', 'small', 'xsmall']
-      if (sizes.includes(this.size)) {
-        return [this.$style[this.size], this.$style.baseIcon]
-      } else {
-        return [this.$style.small, this.$style.baseIcon]
+    iconStyles() {
+      let width = this.width
+      let height = this.height
+      let color = this.color
+
+      if (width !== null) {
+        if (Number.isInteger(Number(width))) {
+          width = width + 'px'
+        }
+      }
+
+      if (height !== null) {
+        if (Number.isInteger(Number(height))) {
+          height = height + 'px'
+        }
+      }
+
+      return {
+        width,
+        height,
+        color,
+        display: 'inline-block',
       }
     },
   },
@@ -37,46 +53,9 @@ export default {
 </script>
 
 <template>
-  <span
-    :class="[overlayClasses, className]"
-    :style="{color: color}"
-    v-bind="$attrs"
-    v-on="$listeners"
-    @click="click()"
-  >
-    <svg>
+  <span :class="className" :style="iconStyles" v-bind="$attrs" v-on="$listeners" @click="click()">
+    <svg style="width: 100% !important; height: 100% !important;">
       <use v-bind="{ 'xlink:href': '#' + name }"></use>
     </svg>
   </span>
 </template>
-
-<style lang="scss" module>
-.baseIcon {
-  display: inline-block;
-
-  > svg {
-    width: 100% !important;
-    height: 100% !important;
-  }
-}
-
-.xsmall {
-  width: 12px;
-  height: 12px;
-}
-
-.small {
-  width: 16px;
-  height: 16px;
-}
-
-.medium {
-  width: 32px;
-  height: 32px;
-}
-
-.large {
-  width: 64px;
-  height: 64px;
-}
-</style>

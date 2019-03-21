@@ -1,6 +1,6 @@
 {
   "name": "@knonginda/other-icons",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "## How to use: 1. Just use `npm install --save @knonginda/other-icons` 2. Use the components in your file directly.",
   "main": "./dist/index.common.js",
   "scripts": {

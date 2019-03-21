@@ -12,35 +12,11 @@ export default {
   data() {
     return {
       productIcons: [
-        'individual-family-insurance',
-        'small-business-insurance',
-        'medicare-insurance',
-        'medicare-advantage',
-        'medicare-supplement',
-        'medicare-part-d',
-        'dental-insurance',
+        'up-arrow-cirlce',
+        'up-arrow',
+        'upload',
         'vision-insurance',
-        'life-insurance',
-        'critical-illness-insurance',
-        'short-term-insurance',
-        'gap-medical-insurance',
-        'accident-insurance',
-        'pet-insurance',
-        'travel-insurance',
-        'student-health-insurance',
-        'international-health-insurance',
-        'cancer-insurance',
-        'telemedicine-insurance',
-        'fixed-indemnity-insurance',
-        'health-savings-account',
-        'business-hsa',
-        'accidental-death-dismemberment',
-        'qualified-health-plan',
-        'hospitalization',
-        'long-term-care',
-        'discount-cards',
-        'prescription-drug-cards',
-        'health-insurance',
+        'volume',
       ],
     }
   },
@@ -51,7 +27,7 @@ export default {
   <ul class="icon-list">
     <li v-for="(icon, index) in productIcons" :key="index">
       <div class="icon">
-        <BaseIcon size="large" :name="icon"/>
+        <BaseIcon width="32" height="32" color="#f00" :name="icon"/>
       </div>
       <div class="icon-name">{{ icon }}</div>
     </li>
