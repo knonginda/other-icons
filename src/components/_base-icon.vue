@@ -10,9 +10,13 @@ export default {
       type: String,
       default: '64',
     },
+    height: {
+      type: String,
+      default: '64',
+    },
     color: {
       type: String,
-      default: '',
+      default: '#333333',
     },
     className: {
       type: String,
